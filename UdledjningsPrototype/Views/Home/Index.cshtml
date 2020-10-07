@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    List<string> imgUrls = new List<string>() { "/img/ExampleHouse/2036495.jpg", "/img/ExampleHouse/50446414.jpg", "/img/ExampleHouse/no5529_16240_637301769625423039.jpg" };
+}
+<div class="row">
+    @for (int i = 0; i < 3; i++)
+    {
+        <div class="col-4">
+            <div class="card">
+                <div class="card-header">
+                    <img src="@imgUrls[i]" class="card-img-top" />
+
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Example new house</h5>
+                    <p class="card-text">This very fine establishment is located centrum, some text ipsum bibsum</p>
+                    <button class="btn btn-primary">See more...</button>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
